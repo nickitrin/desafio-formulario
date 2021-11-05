@@ -9,27 +9,36 @@
 <body>
     <fieldset>
         <legend>Contato</legend>
-    <label>Assunto</label>
-    <select>    <option value="">Escolha o assunto</option>
-        <option value="sup">Suporte</option>
-        <option value="sug">Sugestão</option>
-        <option value="recl">Reclamação</option></select>
-    <br>
-    <label>Nome Completo</label>
-    <br>
-    <input type="text">  
-    <br>
-    <label>E-mail</label>
-    <br>
-    <input type="email">
-    <br>
-    <label>Mensagem</label>
-    <br>
-    <textarea type="textarea" placeholder="Digite sua Mensagem"></textarea>
-    <br>
-    <input type="checkbox">Aceito receber novidades por email</input>
-    <br>
-    <button type="submit">Enviar</button>
-</fieldset>
+        <div>
+            <label for="selectAssuunto">Assunto</label>
+            <select id="selectAssunto">    
+                <option value="">Escolha o assunto</option>
+                <option value="sup">Suporte</option>
+                <option value="sug">Sugestão</option>
+                <option value="recl">Reclamação</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="nomeCompleto">Nome Completo</label>
+            <input id="nomeCompleto" type="text">
+        </div>  
+
+        <div>
+            <label for="email">E-mail</label>
+            <input id="email" type="email">
+        </div>
+
+        <div>
+            <label for="mensagem" >Mensagem</label>
+            <textarea id="mensagem" type="textarea" placeholder="Digite sua Mensagem"></textarea>
+        </div>
+        
+        <div>
+            <input type="checkbox" id="aceitoReceber" />
+            <label for="aceitoReceber">Aceito receber novidades por email</label> 
+        </div>
+        <button type="submit">Enviar</button>
+    </fieldset>
 </body>
 </html>
